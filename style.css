@@ -1,0 +1,343 @@
+.homepage_box_title {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 20px 20px;
+	letter-spacing: 0.5px;
+	color: #222;
+	position: relative;
+}
+
+.homepage_box_title span.refresh_result {
+	height: 24px;
+	width: 24px;
+	margin: 0px auto;
+	position: absolute;
+	right: 5px;
+	top: 14px;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+ 	transition: transform .8s ease-in-out;
+}
+
+
+.homepage_box_title span.refresh_result:hover {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.homepage_box {
+	margin: 0;
+	display: block;
+	overflow: hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.game_results_widgets {
+	padding-left: 20px;
+}
+
+
+ul.tabs{
+	margin: 0px 0px 10px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+	clear: both;
+	display: block;
+	clear: both;
+	overflow: hidden;
+	border:1px solid #e2e3e4;
+}
+
+ul.tabs li{
+	background: none;
+	color: #222;
+	float: left;
+	display: block;
+	padding: 10px 0px;
+	margin: 5px 0px;
+	width: 50%;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 11px;
+    text-transform: uppercase;
+}
+
+ul.tabs li:hover {
+	color: #0069b4;
+}
+
+ul.tabs li.current{
+	color: #0069b4;
+}
+
+ .swiper-slide {
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
+.tab-content{
+	display: inherit;
+	position: relative;
+}
+
+.result-loader {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    display: none;
+    z-index: 99;
+}
+
+.result-loader .mk-preloader {
+	position: absolute;
+	font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #aaa;
+    background: -moz-linear-gradient(left,#aaa 10%,rgba(255,255,255,0) 42%);
+    background: -webkit-linear-gradient(left,#aaa 10%,rgba(255,255,255,0) 42%);
+    background: -o-linear-gradient(left,#aaa 10%,rgba(255,255,255,0) 42%);
+    background: -ms-linear-gradient(left,#aaa 10%,rgba(255,255,255,0) 42%);
+    background: linear-gradient(to right,#aaa 10%,rgba(255,255,255,0) 42%);
+    position: relative;
+    -webkit-animation: mk_preloader .8s infinite cubic-bezier(0.445,.05,.55,.95);
+    animation: mk_preloader .8s infinite cubic-bezier(0.445,.05,.55,.95);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    top: 50%;
+    margin-top: -22.5px;
+}
+
+
+.game_result {
+	display: block;
+	overflow: hidden;
+	padding: 0px ;
+}
+
+.game_result-live-item {
+	clear: both;
+	overflow: hidden;
+	border: 1px solid #d7d7d7;
+}
+
+
+.game_result-item {
+	border-bottom: 1px solid #d7d7d7;
+}
+
+.game_result-live-item .game_result-team_info {
+	padding: 10px;
+	height: 100px; 
+	text-align: center;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.game_result-live-item .game_result-name {
+	font-size: 10px;
+	line-height: 16px;
+	padding: 0px !important;
+	text-transform: uppercase;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.game_result-live-item .game_result-team_info {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	position: relative;
+}
+
+.swiper-container {
+	height: 510px;
+}
+
+.game-item {
+	position: relative;
+    overflow: hidden;
+    background: #fff;
+    color: #4c4e52;
+    height: 120px !important;
+   
+}
+
+.scorebox-container {
+    background: #fff;
+    border: 1px solid #e2e3e4;
+    color: #4c4e52;
+    padding: 21px 17.85px;
+}
+
+.scorebox-container.finished {
+	background: #f6f6f6;
+	border: 1px solid #f6f6f6;
+}
+
+
+.scorebox-container.live {
+	border-color: #2a2f32;
+}
+
+.scorebox-container .score-content {
+	display: table;
+	width: 100%;
+	white-space: nowrap;
+	height: 72px;
+}
+
+.team-names {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.game-team {
+	position: relative;
+    height: 50%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.game-team span {
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.game-team img {
+	width: 22px;
+    padding: 0 8px 4px 0;
+    vertical-align: middle;
+}
+
+.game-item-time,
+.game-item-date {
+	color: #111;
+	font-size: 11px;
+}
+
+.game-item-status {
+	color: #111;
+	font-size: 11px;
+}
+
+.scorebox-container.live .game-item-status {
+	color: #ef4135;
+	font-weight: 600;
+}
+
+
+.game-results {
+	display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.game-result {
+	position: relative;
+    height: 50%;
+    padding-right: 16.85px;
+    -webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.game-result span {
+    display: block;
+    position: relative;
+    top: 50%;
+	transform: translateY(-50%);
+}
+
+.game-item span.winner {
+    font-weight: bold;
+}
+
+.game-time {
+	border-color: #e4e5e7;
+    color: #9ea3ae;
+    width: 20%;
+    border-left-width: 1px;
+    border-left-style: solid;
+    padding-right: 3px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding-left: 17.85px;
+}
+
+
+.game_result-live-item .game_result-title {
+	font-size: 11px;
+	letter-spacing: 0.5px;
+	line-height: 26px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 5px;
+}	
+
+.game_result-live-item .game_result-score {
+	padding-top: 15px;
+	padding-bottom: 35px;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 46px;
+	text-align: center;
+	color: #222;
+	border-bottom:1px solid #d7d7d7;
+}
+
+.game_result-live-item .game_result-score span {
+	color: #ef4135;
+	position: relative;
+	top: -3px;
+	display: inline-block;
+	margin: 0px 2px;
+	font-weight: 300;
+}
+    
+.game_result-live-item .game_result-team_left .game_result-score {
+	text-align: right;
+}  
+
+.game_result-live-item .game_result-team_right .game_result-score {
+	text-align: left;
+}
+
+.game_result-live-item .game_result-team_crest {
+	padding: 0px !important;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
